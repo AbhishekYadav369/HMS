@@ -1,6 +1,6 @@
-package com.java.servlet;
+package com.java.servlet.admin;
 
-import com.java.core.HmsDao;
+import com.java.core.modeldata.HmsDao;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -12,19 +12,25 @@ import java.io.IOException;
 public class RegisterByPatient extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //patients Details
-        String pFname = request.getParameter("pFname");
-        String pMname = request.getParameter("pMname");
-        String pLname = request.getParameter("pLname");
+        String fName = request.getParameter("fName");
+        String mName = request.getParameter("mName");
+        String lName = request.getParameter("lName");
         String medicalHistory = request.getParameter("medicalHistory");
-
         //guardian details
-        String gFname = request.getParameter("gFname");
-        String gLname = request.getParameter("gLname");
-        String Phone = request.getParameter("gPhone");
+        String gFirstName = request.getParameter("gFirstName");
+        String gLastName = request.getParameter("gLastName");
+        String Phone = request.getParameter("phoneNo");
+        String userId=request.getParameter("userId");
+        String password = request.getParameter("password");
         HmsDao hmsDao1=new HmsDao();
-        if(hmsDao1.insert(pFname,pMname,pLname,gFname,gLname,Phone,medicalHistory)==1){
-            System.out.println("Register Success");
-        }else System.out.println("Register Fail");
+        if(hmsDao1.insert(fName,mName,lName,gFirstName,gLastName,Phone,medicalHistory,userId,password)==1){
+            request.setAttribute("successMessage","Patient Registration Successful");
+            request.getRequestDispatcher("patientSignUp.jsp").forward(request,response);
+        }
+        else{
+            request.setAttribute("errorMessage","Patients Registration Failed");
+            request.getRequestDispatcher("patientSignUp.jsp").forward(request,response);
+           }
 
     }
 }

@@ -1,17 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Hospital:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b61841b4-a3e8-4cf3-a2a8-ece1c4f4030b" name="Changes" comment="" />
+    <list default="true" id="b61841b4-a3e8-4cf3-a2a8-ece1c4f4030b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/f0026928-7a9e-4750-9c64-efabb0ea2cc1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/f0026928-7a9e-4750-9c64-efabb0ea2cc1/storage_v2/_src_/schema/hospital_management_system.5kIuFA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/core/beans/HospitalInfra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/core/beans/admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/core/modeldata/HmsDaoRead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/servlet/Read/HealthCareRead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/servlet/Read/InfrastructureRead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/servlet/Read/MedicalRead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/servlet/Read/PatientRead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/servlet/Read/ReadServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/HealthCareRegisterByAdmin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/InfrastructureDash.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/doctorDash.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/hms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/pat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/loginHealthCare.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/medicalDash.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/medicalLogin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/nurseDash.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/patientDash.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/patientHome.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/patientRegisterByAdmin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/wardBoyDash.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java/core/beans/HealthCare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/core/beans/HealthCare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java/core/beans/Medical.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/core/beans/Medical.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java/core/beans/Patients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/core/beans/Patients.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java/core/modeldata/HmsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/core/modeldata/HmsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java/core/modeldata/HmsDoaHealthCare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/core/modeldata/HmsDoaHealthCare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java/servlet/admin/RegisterByAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/servlet/admin/RegisterByAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java/servlet/admin/RegisterByPatient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/servlet/admin/RegisterByPatient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java/servlet/authentication/LoginHealthCare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/servlet/authentication/LoginHealthCare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java/servlet/authentication/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/servlet/authentication/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java/servlet/logout/LogOutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/servlet/logout/LogOutServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/HealthCareRegister.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/InfrastructureDash.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/adminDash.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adminDash.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/adminLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adminLogin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/patientRegister.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/healthCare/doctorDash.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/healthCare/loginHealthCare.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/healthCare/nurseDash.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/healthCare/wardBoyDash.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/medical/medicalDash.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/medical/medicalLogin.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/patients/patientDash.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/patients/patientLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/patientLogin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/patients/patientSignUp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/patientSignUp.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Jsp File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/java/core/HmsDao.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -20,24 +107,152 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2t7AchDP8nUc8lbEbxvwMlBsv4r" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path&quot;: &quot;C:\\Program Files\\MySQL\\mysql-connector-j-8.4.0&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Tomcat 11.0.2.executor&quot;: &quot;Run&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;packageLocal&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Abhishek Yadav/java-project/Hospital/src/main/webapp/images&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.folding&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Abhishek Yadav\java-project\Hospital\src\main\webapp\images" />
+      <recent name="C:\Users\Abhishek Yadav\java-project\Hospital\src\main\webapp\WEB-INF\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Abhishek Yadav\java-project\Hospital\src\main\webapp" />
+      <recent name="C:\Users\Abhishek Yadav\java-project\Hospital\src\main\webapp\admin" />
+      <recent name="C:\Users\Abhishek Yadav\java-project\Hospital\src\main\webapp\healthCare" />
+      <recent name="C:\Users\Abhishek Yadav\java-project\Hospital\src\main\webapp\patients" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 11.0.2" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 11.0.2" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/Hospital_war_exploded/index.jsp" />
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <deployment>
+        <artifact name="Hospital:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/Hospital_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="9e75195e-fc9b-4011-afe7-ff9b4e85ebe0" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53914" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Hospital:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -54,11 +269,86 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1739692823153</updated>
-      <workItem from="1739692824228" duration="2000" />
+      <workItem from="1739692824228" duration="105000" />
+      <workItem from="1739692978038" duration="113000" />
+      <workItem from="1739693240651" duration="326000" />
+      <workItem from="1739694536976" duration="2645000" />
+      <workItem from="1739697296667" duration="66000" />
+      <workItem from="1739697377816" duration="344000" />
+      <workItem from="1739933227668" duration="9144000" />
+      <workItem from="1740132223602" duration="642000" />
+      <workItem from="1740925381663" duration="187000" />
+      <workItem from="1741422831051" duration="14183000" />
+      <workItem from="1741491270970" duration="4605000" />
+      <workItem from="1741499111579" duration="607000" />
+      <workItem from="1741499737846" duration="122000" />
+      <workItem from="1741500570005" duration="1304000" />
+      <workItem from="1741503547583" duration="37000" />
+      <workItem from="1741503594323" duration="108000" />
+      <workItem from="1741504205709" duration="3030000" />
+      <workItem from="1741563255776" duration="863000" />
+      <workItem from="1741567577755" duration="1696000" />
+      <workItem from="1741747733425" duration="223000" />
+      <workItem from="1741916620335" duration="5024000" />
+      <workItem from="1741922578775" duration="2055000" />
+      <workItem from="1741925607112" duration="26000" />
+      <workItem from="1741925661193" duration="504000" />
+      <workItem from="1741926180367" duration="89000" />
+      <workItem from="1742007283037" duration="1174000" />
+      <workItem from="1742090295550" duration="80000" />
+      <workItem from="1742371113090" duration="1808000" />
+      <workItem from="1742383024314" duration="1273000" />
+      <workItem from="1742394126094" duration="324000" />
+      <workItem from="1742439146397" duration="8804000" />
+      <workItem from="1742467109377" duration="3441000" />
+      <workItem from="1742870414460" duration="97000" />
+      <workItem from="1742904311109" duration="4965000" />
+      <workItem from="1742957777184" duration="324000" />
+      <workItem from="1742961474167" duration="9074000" />
+      <workItem from="1742977756183" duration="1956000" />
+      <workItem from="1743124684613" duration="7034000" />
+      <workItem from="1743137092446" duration="8036000" />
+      <workItem from="1743145237806" duration="509000" />
+      <workItem from="1743155087761" duration="48000" />
+      <workItem from="1743155300158" duration="3137000" />
+      <workItem from="1743212442290" duration="14817000" />
+      <workItem from="1743389086696" duration="5887000" />
+      <workItem from="1743395037536" duration="5962000" />
+      <workItem from="1743401106485" duration="111000" />
+      <workItem from="1743403011035" duration="1431000" />
+      <workItem from="1743409155911" duration="14701000" />
+      <workItem from="1743463161709" duration="5765000" />
+      <workItem from="1743472688953" duration="7960000" />
+      <workItem from="1743484006149" duration="5913000" />
+      <workItem from="1743506711983" duration="7396000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.cmd" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/java/core/modeldata/HmsDao.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/java/core/modeldata/HmsDao.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/java/core/modeldata/HmsDao.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

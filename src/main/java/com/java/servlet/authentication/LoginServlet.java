@@ -13,7 +13,7 @@ import java.io.IOException;
 // job by creating session
 //this is used for checking admin,medical and patients login
 @WebServlet(name="check-servlet",value="/check-servlet")
-public class CheckServlet extends HttpServlet {
+public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)throws ServletException, IOException {
 
        String userId= req.getParameter("userId");
@@ -28,39 +28,29 @@ public class CheckServlet extends HttpServlet {
                     HttpSession session = req.getSession();
                     session.setAttribute("userId", userId);
                     session.setAttribute("userRole",loginInfo);
-                    resp.sendRedirect("admin/admin_login.jsp");
+                    req.getRequestDispatcher("adminDash.jsp").forward(req, resp);
+
                 } else {
                     req.setAttribute("errorMessage", "Invalid username or password!");
-                    RequestDispatcher dispatcher = req.getRequestDispatcher("admin/login.jsp");
-                    dispatcher.forward(req, resp);
+                     req.getRequestDispatcher("adminLogin.jsp").forward(req, resp);
                 }
                 break;
-            case "patients_login":
+            case "patients":
                 if (check) {
                     HttpSession session = req.getSession();
                     session.setAttribute("userId", userId);
                     session.setAttribute("userRole",loginInfo);
-                    resp.sendRedirect("patients/patientDash.jsp");
-                } else {
-                    req.setAttribute("errorMessage", "Invalid username or password!");
-                    RequestDispatcher dispatcher = req.getRequestDispatcher("patients/loginPatient.jsp");
-                    dispatcher.forward(req, resp);
+                    req.getRequestDispatcher("patientDash.jsp").forward(req, resp);
                 }
-                break;
-            case "medical_login":
-                if (check) {
-                    HttpSession session = req.getSession();
-                    session.setAttribute("userId", userId);
-                    session.setAttribute("userRole",loginInfo);
-                    resp.sendRedirect("medical/medicalDash.jsp");
-                } else {
+                else {
                     req.setAttribute("errorMessage", "Invalid username or password!");
-                    RequestDispatcher dispatcher = req.getRequestDispatcher("medical/medicalLogin.jsp");
-                    dispatcher.forward(req, resp);
-                }
+                     req.getRequestDispatcher("patientLogin.jsp").forward(req, resp);
+                  }
                 break;
+
             default:
-                req.setAttribute("errorMessage", "Invalid Request Code!");
+                System.out.println("something went wrong in Login Servlet");
+                break;
         }
 
 

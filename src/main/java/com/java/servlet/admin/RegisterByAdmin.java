@@ -1,7 +1,7 @@
-package com.java.servlet;
+package com.java.servlet.admin;
 
-import com.java.core.HmsDao;
-import com.java.core.HmsDoaHealthCare;
+import com.java.core.modeldata.HmsDao;
+import com.java.core.modeldata.HmsDoaHealthCare;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -11,60 +11,51 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 
-@WebServlet(name="registerByAdmin",value="/registerByAdmin")
+@WebServlet("/registerByAdmin")
 public class RegisterByAdmin extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String register = request.getParameter("register");
+        String fName = request.getParameter("fName");
+        String mName = request.getParameter("mName");
+        String lName = request.getParameter("lName");
+        String phoneNo = request.getParameter("phoneNo");
+        String password = request.getParameter("password");
+        String userName = request.getParameter("userName");
+        System.out.println("register by admin called");
         switch (register) {
             case "healthCareRegister":
-                String fName = request.getParameter("fName");
-                String mName = request.getParameter("mName");
-                String lName = request.getParameter("lName");
+                System.out.println("healthCareRegister called");
                 String role = request.getParameter("role");
-                String phoneNo = request.getParameter("phoneNo");
                 String salary = request.getParameter("salary");
                 HmsDoaHealthCare hmsDao = new HmsDoaHealthCare();
-                if (hmsDao.insert(fName, mName, lName, role, phoneNo, salary) == 1){
-                    System.out.println("Register Success");
-                    request.setAttribute("successMessage", "1 row affected!");
-                    RequestDispatcher dispatcher = request.getRequestDispatcher("admin/HealthCareRegister.jsp");
-                    dispatcher.forward(request, response);
-                } else {
-                    System.out.println("Register Fail");
-                    request.setAttribute("errorMessage", "Each fields must be filled ");
-                    RequestDispatcher dispatcher = request.getRequestDispatcher("admin/HealthCareRegister.jsp");
-                    dispatcher.forward(request, response);
-                }
 
+                if (hmsDao.insert(fName, mName, lName, role, phoneNo, salary,userName,password) == 1){
+                    request.setAttribute("successMessage", "Health Care Registered Successfully!");
+                    request.getRequestDispatcher("HealthCareRegisterByAdmin.jsp").forward(request, response);
+                } else {
+                    request.setAttribute("errorMessage", "Each fields must be filled ");
+                    request.getRequestDispatcher("HealthCareRegisterByAdmin.jsp").forward(request, response);
+                }
 
                 break;
             case "patientRegister":
+                System.out.println("patientRegister called");
                 //patients Details
-                String pFname = request.getParameter("pFname");
-                String pMname = request.getParameter("pMname");
-                String pLname = request.getParameter("pLname");
                 String medicalHistory = request.getParameter("medicalHistory");
-
                 //guardian details
-                String gFname = request.getParameter("gFname");
-                String gLname = request.getParameter("gLname");
-                String Phone = request.getParameter("gPhone");
+                String gFirstName = request.getParameter("gFirstName");
+                String gLastName = request.getParameter("gLastName");
                 HmsDao hmsDao1=new HmsDao();
-                if(hmsDao1.insert(pFname,pMname,pLname,gFname,gLname,Phone,medicalHistory)==1){
-                    System.out.println("Register Success");
+                if(hmsDao1.insert(fName,mName,lName,gFirstName,gLastName,phoneNo,medicalHistory,userName,password)==1){
                     request.setAttribute("successMessage", "added successfully!");
-                    RequestDispatcher dispatcher = request.getRequestDispatcher("admin/patientRegister.jsp");
-                    dispatcher.forward(request, response);
+                    request.getRequestDispatcher("patientRegisterByAdmin.jsp").forward(request, response);
                 }else {
-                    System.out.println("Register Fail");
                     request.setAttribute("errorMessage", "Each fields must be filled ");
-                    RequestDispatcher dispatcher = request.getRequestDispatcher("admin/patientRegister.jsp");
-                    dispatcher.forward(request, response);
+                     request.getRequestDispatcher("patientRegisterByAdmin.jsp").forward(request, response);
                 }
-
                 break;
             default:
-                System.out.println("invalid register");
+                System.out.println("invalid attempt  by "+register+" for registering into database!");
 
                 break;
         }

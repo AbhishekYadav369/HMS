@@ -1,38 +1,41 @@
-package com.java.core;
+package com.java.core.beans;
+
+import java.util.Date;
 
 public class Medical {
     private String name;
     private String dose;
     private int quantity;
-    private String manufacutringDate;
-    private String expiryDate;
+    private Date manDate;
+    private Date expiryDate;
     private int price;
-    public Medical(String name,String dose,int quantity,String manufacutringDate,String expiryDate,int price){
+    public Medical(String name, String dose, int quantity, Date manDate, Date expiryDate, int price){
         this.name = name;
         this.dose = dose;
         this.quantity = quantity;
-        this.manufacutringDate = manufacutringDate;
+        this.manDate = manDate;
         this.expiryDate = expiryDate;
         this.price = price;
     }
 
+
     public String getDose() { return dose;}
 
-    public String getManufacutringDate() { return manufacutringDate;}
+    public Date getManDate() { return manDate;}
 
     public int getQuantity() { return quantity;}
 
     public int getPrice() { return price;}
 
-    public String getExpiryDate() { return expiryDate;}
+    public Date getExpiryDate() { return expiryDate;}
 
     public String getName() { return name;}
 
     public void setDose(String dose) { this.dose = dose;}
 
-    public void setExpiryDate(String expiryDate) { this.expiryDate = expiryDate;}
+    public void setExpiryDate(Date expiryDate) { this.expiryDate = expiryDate;}
 
-    public void setManufacutringDate(String manufacutringDate) { this.manufacutringDate = manufacutringDate;}
+    public void setManDate(Date manDate) { this.manDate = manDate;}
 
     public void setName(String name) { this.name = name;}
 
@@ -41,16 +44,10 @@ public class Medical {
     public void setQuantity(int quantity) { this.quantity = quantity;}
 
     @Override
-
     public String toString() {
-        return "Medical{" +
-                "dose='" + dose + '\'' +
-                ", name='" + name + '\'' +
-                ", quantity=" + quantity +
-                ", manufacutringDate='" + manufacutringDate + '\'' +
-                ", expiryDate='" + expiryDate + '\'' +
-                ", price=" + price +
-                '}';
+        return "\t Medicine: {" +"name = "+ name+", dose =" + dose + ", quantity =" + quantity +
+                ", Manufactring Date =" + manDate + ", expiryDate =" + expiryDate +
+                ", price =" + price + '}';
     }
 }
 

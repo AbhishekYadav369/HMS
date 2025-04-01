@@ -1,4 +1,4 @@
-package com.java.servlet;
+package com.java.servlet.logout;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

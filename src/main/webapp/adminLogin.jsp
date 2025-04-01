@@ -17,7 +17,7 @@
 py-1 md:py-1.5 text-slate-100 min-w-40">
     <h3 class="capitalize md:uppercase ">Welcome To Admin Login Page!!</h3>
     <span class=" text-slate-50 md:justify-items-end px-2 hover:bg-red-500 rounded-md  transition-all duration-500 ease-in-out ">
-        <a href="${pageContext.request.contextPath}/index.jsp">Back</a></span>
+        <a href="index.jsp">Back</a></span>
 
 </header>
 
@@ -28,10 +28,10 @@ py-1 md:py-1.5 text-slate-100 min-w-40">
                 <label> User_Id :<input  class="mx-3 rounded-md p-1 bg-slate-50 min-w-58" type="text" name="userId" placeholder="User Name "/></label>
                 <label>PASSWORD :<input  class="mx-1 rounded-md p-1 bg-slate-50 min-w-50" type="password" name="password" placeholder="password"></label>
                 <input type="hidden" name="loginInfo" value="admin_login">
-                <input  class = "text-emerald-900 md:justify-items-end text-semibold hover:bg-emerald-300 p-3 rounded-md  transition-all duration-500 ease-in-out "  type="submit" value=" Login here"/><br/>
+                <input  class = "text-emerald-900 md:justify-items-end text-semibold hover:bg-emerald-300 p-3 rounded-md  transition-all duration-500 ease-in-out "  type="submit" value=" Login here"/>
                 <%-- Display error message if it exists --%>
-                <p style="color: red;">
-                    <%= request.getAttribute("Message") == null ? "" : request.getAttribute("Message") %>
+                <p class=" text-red-800 text-sm font-serif">
+                    <%= request.getAttribute("errorMessage") == null ? "" : request.getAttribute("errorMessage") %>
                 </p>
             </div>
         </form>

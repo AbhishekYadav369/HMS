@@ -1,70 +1,53 @@
-package com.java.core;
+package com.java.core.beans;
 
- class Patients {
+ public class Patients {
         private  String firstName;
         private  String middleName;
         private  String lastName;
-        private  String gardianFname;
-        private  String gardianLname;
-        private  String address;
+        private  String gFirstName;
+        private  String gLastName;
         private  String number;
         private  String medicalHistory;
 
-        public Patients(String firstName,String middleName,String lastName,String gardianFname,String gardianLname,String address,String number,String medicalHistory) {
+        public Patients(String firstName, String middleName, String lastName, String gFirstName, String gLastName, String number, String medicalHistory) {
             this.firstName=firstName;
             this.middleName=middleName;
             this.lastName=lastName;
-            this.gardianFname=gardianFname;
-            this.address=address;
-            this.gardianLname=gardianLname;
+            this.gFirstName = gFirstName;
+            this.gLastName =gLastName;
             this.number=number;
             this.medicalHistory=medicalHistory;
 
         }
-        public  String getLastName() { return lastName;}
 
         public  String getMedicalHistory() { return medicalHistory;}
-
-        public  String getGardianFname() { return gardianFname;}
-
-        public  String getNumber() { return number;}
-
-        public  String getAddress() { return address;}
-
-        public  String getGardianLname() { return gardianLname;}
-
-        public  String getMiddleName() { return middleName;}
-
-        public  String getFirstName() { return firstName;}
-
-     public void setAddress(String address) { this.address = address;}
-
-     public void setFirstName(String firstName) { this.firstName = firstName;}
-
-     public void setGardianFname(String gardianFname) { this.gardianFname = gardianFname;}
-
-     public void setGardianLname(String gardianLname) { this.gardianLname = gardianLname;}
-
-     public void setLastName(String lastName) { this.lastName = lastName;}
-
      public void setMedicalHistory(String medicalHistory) { this.medicalHistory = medicalHistory;}
 
+        public  String getNumber() { return number;}
+        public void setNumber(String number) {  this.number = number;}
+
+        public  String getMiddleName() { return middleName;}
      public void setMiddleName(String middleName) { this.middleName = middleName;}
 
-     public void setNumber(String number) {  this.number = number;}
+        public  String getFirstName() { return firstName;}
+     public void setFirstName(String firstName) { this.firstName = firstName;}
+
+     public void setLastName(String lastName) { this.lastName = lastName;}
+     public  String getLastName() { return lastName;}
+
+     public void setGarFirstName(String gFirstName) { this.gFirstName = gFirstName;}
+     public  String getGarFirstName() { return gFirstName;}
+
+     public  String getGarLastName() { return gLastName;}
+     public void setGarLastName(String gLastName) { this.gLastName = gLastName;}
+
 
      @Override
      public String toString() {
-         return "Patients{" +
-                 "address='" + address + '\'' +
-                 ", firstName='" + firstName + '\'' +
-                 ", middleName='" + middleName + '\'' +
-                 ", lastName='" + lastName + '\'' +
-                 ", gardianFname='" + gardianFname + '\'' +
-                 ", gardianLname='" + gardianLname + '\'' +
-                 ", number='" + number + '\'' +
-                 ", medicalHistory='" + medicalHistory + '\'' +
-                 '}';
+         return "Patients{" + ", firstName='" + firstName + '\'' +
+                 ", middleName='" + middleName + '\'' + ", lastName='" + lastName + '\'' +
+                 ", GarFirstName='" + gFirstName + '\'' + ", GarLastName='" + gLastName + '\'' +
+                 ", number='" + number + '\'' + ", medicalHistory='" + medicalHistory + '\'' + '}';
      }
  }
 

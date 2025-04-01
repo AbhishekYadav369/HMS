@@ -1,18 +1,18 @@
-package com.java.core;
+package com.java.core.beans;
 
 public class HealthCare {
     private String firstName;
     private String middleName;
     private String lastName;
     private String number;
-    private double salary;
+    private int salary;
     private String role;
-    public HealthCare(String firstName, String middleName, String lastName, String number, double salary, String role) {
+    public HealthCare(String firstName, String middleName, String lastName, String number, int salary, String role) {
         this.firstName = firstName;
         this.middleName = middleName;
         this.lastName = lastName;
         this.number = number;
-        this.salary = salary;
+        this.salary =  salary;
         this.role = role;
 
     }
@@ -25,11 +25,11 @@ public class HealthCare {
         this.firstName = firstName;
     }
 
-    public double getSalary() {
+    public int getSalary() {
         return salary;
     }
 
-    public void setSalary(double salary) {
+    public void setSalary(int salary) {
         this.salary = salary;
     }
 
@@ -67,14 +67,9 @@ public class HealthCare {
 
     @Override
     public String toString() {
-        return "HealthCare{" +
-                "firstName='" + firstName + '\'' +
-                ", middleName='" + middleName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", number='" + number + '\'' +
-                ", salary=" + salary +
-                ", role='" + role + '\'' +
-                '}';
+        return "HealthCare{" + "firstName='" + firstName + '\'' + ", middleName='" + middleName + '\'' +
+                ", lastName='" + lastName + '\'' + ", number='" + number + '\'' +
+                ", salary=" + salary + ", role='" + role + '\'' + '}';
     }
 }
 
